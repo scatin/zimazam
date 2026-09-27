@@ -1,6 +1,5 @@
-from zimazam import input, output, select
+from zimazam import input, output, select, step
 
-df = input("data/Product-Sales-Region.xlsx")
-print(df)
-select("test.txt")
-output("test.txt")
+input("data/Product-Sales-Region.xlsx")
+
+print(select(["Region", "Quantity"]))
